@@ -1,0 +1,99 @@
+:root {
+    --primary-color: #5d4037; /* Coffee Brown */
+    --accent-color: #ff9800;  /* Juice Orange */
+    --bg-color: #fdf5e6;     /* Old Lace White */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: #333;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 { margin: 0; font-size: 1.5rem; text-transform: uppercase; }
+
+.status {
+    display: inline-block;
+    background: #4caf50;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #777;
+}
+
+.tab-btn.active {
+    color: var(--accent-color);
+    border-bottom: 3px solid var(--accent-color);
+}
+
+#menu-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.menu-category h2 {
+    color: var(--primary-color);
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+.price { font-weight: bold; color: var(--primary-color); }
+
+.cta-container {
+    text-align: center;
+    margin: 30px 0;
+    padding-bottom: 50px;
+}
+
+.whatsapp-btn {
+    background-color: #25d366;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+    padding: 20px;
+}
