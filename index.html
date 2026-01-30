@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory Pro + Margin Analysis</title>
+    <title>Innovaash POS - Smart Billing with Margin Analysis</title>
     <style>
         :root { --primary: #2563eb; --danger: #dc2626; --success: #059669; --warning: #f59e0b; --bg: #f1f5f9; --card: #ffffff; }
         body { font-family: 'Inter', sans-serif; background: var(--bg); padding: 20px; color: #1e293b; }
@@ -30,11 +30,12 @@
 </head>
 <body>
 
-<input id="licenseInput" placeholder="Enter License Key">
-<button onclick="activate()">Activate</button>
+<!--<input id="licenseInput" placeholder="Enter License Key">
+<button onclick="activate()">Activate</button>-->
 
 <div class="card">
-    <h2 style="margin-top:0">Entry with Margin Tracking</h2>
+    <h2 style="margin-top:0">Innovaash POS - Smart Billing with Margin Analysis</h2>
+    <p style = "text-align:center; color:#4b5563; font-size:14px; margin-bottom:20px;"> Simple. Fast. Reliable. Designed for single-owner shops.</p>
     <div style="font-size:0.8rem; color:#64748b;">
     Plan: <strong id="planName"></strong>
 </div>
@@ -73,6 +74,16 @@
                     <th class="margin-col">Margin %</th>
                     <th class="margin-col">Total Profit</th>
                     <th>Action</th>
+                </tr>
+                <tr class="demo">
+                    <td>Sample Item</td>
+                    <td>30</td>
+                    <td>619.80</td>
+                    <td>29.51</td>
+                    <td>4.77</td>
+                    <td>3.18</td>
+                    <td>16.2%</td>
+                    <td>95.43</td>
                 </tr>
             </thead>
             <tbody id="tableBody"></tbody>
@@ -301,4 +312,5 @@ document.getElementById("planName").innerText =
     }
 </script>
 </body>
+
 </html>
