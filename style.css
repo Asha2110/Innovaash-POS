@@ -10,7 +10,13 @@ body {
     padding: 0;
     background-color: var(--bg-color);
     color: #333;
+       
 }
+ input[type="text"], input[type="number"] {
+     font-size: 16px; /*bigger for readability*/
+     padding: 8px;
+
+ }
 
 header {
     background-color: var(--primary-color);
@@ -23,6 +29,7 @@ header h1 { margin: 0; font-size: 1.5rem; text-transform: uppercase; }
 
 .status {
     display: inline-block;
+    color: #1f2937; /*dark gray*/
     background: #4caf50;
     padding: 5px 15px;
     border-radius: 20px;
@@ -90,10 +97,28 @@ nav {
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+.demo {
+    color: #6b7280; /*gray text to show it's a placeholder*/
+    font-style: italic;
+
+}
+button {
+    font-size: 16px; /*bigger text*/
+    padding: 10px 20px; /*bigger click area*/
+    border-radius: 8px; /*nicer look*/
+    background-color: #2563eb; /*blue button*/
+    color: white;
+    cursor: pointer;
+}
+
+button: hover{
+    background-color: #1d4ed8; /*slightly darker on hover*/
+}
 
 footer {
     text-align: center;
     font-size: 0.8rem;
     color: #777;
     padding: 20px;
+
 }
